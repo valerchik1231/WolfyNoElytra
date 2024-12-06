@@ -1,0 +1,21 @@
+name: WolfyNoElytra
+version: '${project.version}'
+main: ru.valerchik.wolfynoelytra.WolfyNoElytra
+api-version: '1.16'
+depend: [WorldEdit, WorldGuard]
+authors: [Valerchik123]
+description: запрет полета на элитрах в регионе с флагом
+
+commands:
+  wolfynoelytra:
+    description: Перезагрузка конфигурации плагина.
+    usage: /wolfynoelytra reload
+    permission: WolfyNoElytra.reload
+
+permissions:
+  WolfyNoElytra.bypass:
+    description: Игнорирует запрет на полет на элитрах.
+    default: false
+  WolfyNoElytra.reload:
+    description: Позволяет перезагрузить конфигурацию плагина.
+    default: op
